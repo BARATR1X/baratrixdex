@@ -3,9 +3,7 @@ const getPokemonUrl = (id) => `http://pokeapi.co/api/v2/pokemon/${id}`;  // atri
 const generatePokemonPromises = () =>
   Array(151)  // reserva de arrays de quantidade de pokemons na geração
     .fill()
-    .map((_, index) =>
-      fetch(getPokemonUrl(index + 1))  // estah dizendo para começar apartir do numero 1 da dex
-      .then((response) => response.json()) //
+    .map((_, index) =>  fetch(getPokemonUrl(index + 1)) .then((response) => response.json()) //
     );
 
 const generateHTML = (pokemons) =>
