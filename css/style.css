@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #4242e3, #52123e);
+  color: aliceblue;
+}
+
+@media (max-width: 624px) {
+  .containerPrincipal img {
+    width: 500px;
+  }
+  .contentPrincipal img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 616px) {
+  .containerPrincipal img {
+    width: 400px;
+  }
+  .contentPrincipal img {
+    width: 400px;
+    height: 200px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 599px) {
+  .containerPrincipal img {
+    width: 400px;
+  }
+  .contentPrincipal img {
+    width: 400px;
+    height: 200px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 435px) {
+  .containerPrincipal img {
+    width: 300px;
+  }
+  .contentPrincipal img {
+    width: 300px;
+    height: 150px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 325px) {
+  .containerPrincipal img {
+    width: 250px;
+  }
+  .contentPrincipal img {
+    width: 250px;
+    height: 125px;
+    flex-direction: column;
+  }
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -300px;
+}
+
+.containerPrincipal {
+  display: flex;
+  justify-content: center;
+}
+
+.logoTopo {
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentPrincipal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  width: 600px;
+  height: 400px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -500px;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h2,
+p {
+  text-align: center;
+  color: #52123e;
+}
+
+#bntVoltar {
+  font-size: 24px;
+  color: aliceblue;
+  background: none;
+}
+
+#bntVoltar a {
+  color: aliceblue;
+}
+
+.botao {
+  width: 100%;
+  height: 100vh;  
+  justify-content: flex-end;  
+  align-items: left;
+  display: flex;  
+  flex-direction: column;
+  margin-top: -410px;
+}
+
+#bntTopo {
+  width: 55px;
+  position: fixed;
+  background: linear-gradient(45deg, #4242e3, #52123e);
+}
+
+#imgTopo {
+  width: 50px;
+}
+
+.card-image {
+  padding: 10px 20px;
+  width: 300px;
+  height: auto;
+}
+
+.steel {
+  background-color: #f4f4f4;
+}
+
+.fire {
+  background-color: #ff4500;
+}
+
+.grass {
+  background-color: #32cd32;
+}
+
+.electric {
+  background-color: #ffff00;
+}
+
+.water {
+  background-color: #1e90ff;
+}
+
+.ice {
+  background-color: #b0e2ff;
+}
+
+.ground {
+  background-color: #a0522d;
+}
+
+.rock {
+  background-color: #d5d5d4;
+}
+
+.fairy {
+  background-color: #fceaff;
+}
+
+.poison {
+  background-color: #da70d6;
+}
+
+.bug {
+  background-color: #20b2aa;
+}
+
+.dragon {
+  background-color: #97b3e6;
+}
+
+.psychic {
+  background-color: #ff1493;
+}
+
+.flying {
+  background-color: #f5f5f5;
+}
+
+.fighting {
+  background-color: #eeb4b4;
+}
+
+.normal {
+  background-color: #f5f5f5;
+}
+
+.ghost {
+  background-color: #7d26cd;
+}
+
+.dark {
+  background-color: #2f4f4f;
+}
