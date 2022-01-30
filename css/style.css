@@ -122,10 +122,9 @@ h1 {
   text-align: center;
 }
 
-h2,
-p {
+h2, p {
   text-align: center;
-  color: #52123e;
+  color: black;
 }
 
 #bntVoltar {
@@ -162,6 +161,10 @@ p {
   padding: 10px 20px;
   width: 300px;
   height: auto;
+}
+
+li:hover{
+  background-color: #B8860B;  
 }
 
 .steel {

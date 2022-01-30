@@ -10,15 +10,11 @@ const generatePokemonPromises = () =>
 const generateHTML = (pokemons) =>
   pokemons.reduce((accumulator, { name, id, types }) => {
     const elementTypes = types.map((typeinfo) => typeinfo.type.name);
-
-    const index = id < 10 ? "00" : "";
-
-    const indexTwo = id > 9 && id < 100 ? "0" : "";
-
+    
     accumulator += `
       <li class="card ${elementTypes[0]}">
-        <img class="card-image " alt="${name}" src="https://cdn.traction.one/pokedex/pokemon/${id}.png"/>
-        <h2 class="card-title">${index}${indexTwo}${id}. ${name.toUpperCase()}</h2>
+        <img class="card-image " alt="${name}" src="http://cdn.traction.one/pokedex/pokemon/${id}.png"/>
+        <h2 class="card-title">${id}. ${name.toUpperCase()}</h2>
         <p class="card-subtitle">${elementTypes.join(" | ").toUpperCase()}</p> 
       </li>`;
     return accumulator;
